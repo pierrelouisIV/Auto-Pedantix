@@ -12,7 +12,7 @@ banner = r"""
     /_/  |_\__,_/ \__/ \____/      /_/     \___/\__,_/  \__,_/ /_/ /_/\__/ /_/  /_/|_|  
 
                 Petrus Clovis                                                                    
-                Version 1.1.0
+                Version 1.0
 """
 
 # Fonction pour envoyer une requête à l'API de pédantix
