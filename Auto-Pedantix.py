@@ -50,7 +50,7 @@ def dico2texte(dico):
     return L
 
 def rechercheWiki(list_words):
-    v = wikipedia.search(list_words, results=50, suggestion=True)    
+    v = wikipedia.search(list_words, results=30, suggestion=True)    
     return v[0]
 
 def affinage_recherche(pages):
@@ -65,7 +65,7 @@ def affinage_recherche(pages):
 def afficher_resultats(res):
     i = 1
     print("\nListe des mots pédantix potentiel aujourd'hui:\n")
-    for result in res[0:5]:
+    for result in res[0:len(res)//2]:
         print("\033[92m" + f"[+{i}+]" + "\033[0m" + f" {result}\n")
         i += 1
 
