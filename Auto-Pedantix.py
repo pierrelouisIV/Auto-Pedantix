@@ -65,7 +65,7 @@ def affinage_recherche(pages):
 def afficher_resultats(res):
     i = 1
     print("\nListe des mots pédantix potentiel aujourd'hui:\n")
-    for result in res[0:len(res)//2]:
+    for result in res:
         print("\033[92m" + f"[+{i}+]" + "\033[0m" + f" {result}\n")
         i += 1
 
@@ -85,7 +85,7 @@ def main():
     #
     j = 2
     while True:
-        q = input("\nVoulez-vous affiner la recherche ? (Y/n)\n")
+        q = input("\nVoulez-vous affiner la recherche ? (Y/N)\n")
         if q == "Y" or q == "y":
             print("\nAffinage de la recherche:\n")
             print('\n Itération n°{}:\n'.format(j))
